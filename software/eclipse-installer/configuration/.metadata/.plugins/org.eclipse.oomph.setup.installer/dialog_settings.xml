@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.oomph.setup.internal.installer.NetworkConnectionsDialog">
+		<item value="600" key="dialogHeight"/>
+		<item value="600" key="dialogWidth"/>
+	</section>
+	<section name="org.eclipse.oomph.setup.internal.installer.NetworkSSH2Dialog">
+		<item value="600" key="dialogHeight"/>
+		<item value="600" key="dialogWidth"/>
+	</section>
+</section>
