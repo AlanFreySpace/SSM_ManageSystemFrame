@@ -32,7 +32,12 @@ public class SystemController {
 	@RequestMapping(value="/index",method=RequestMethod.GET)
 	public ModelAndView index(ModelAndView model) {
 		model.setViewName("system/index");
-		model.addObject("name", "you");
+		return model;
+	}
+	
+	@RequestMapping(value="/welcome",method=RequestMethod.GET)
+	public ModelAndView welcome(ModelAndView model) {
+		model.setViewName("system/welcome");
 		return model;
 	}
 	
@@ -89,6 +94,7 @@ public class SystemController {
 			ret.put("msg", "ÃÜÂë´íÎó!");
 			return ret;
 		}
+		request.getSession().setAttribute("admin", findByUsername);
 		ret.put("type", "success");
 		ret.put("msg", "µÇÂ¼³É¹¦!");
 		return ret;
